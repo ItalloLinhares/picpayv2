@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br"
+      xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+<h1>Cadastre o seu usário</h1>
+<form action="/cadastrarUsuario" method="post">
+    <label>Nome:</label><input type="text" name="nomeUsuario">
+    <p>Selecione o tipe de conta</p>
+    <input type="radio" name="tipoConta" value="1" id = "Cliente">
+    <label for="Cliente">Cliente</label><br>
+    <input type="radio"  name="tipoConta" value="0" id = "Lojista">
+    <label for="Lojista">Lojista</label><br>
+    <button type="=submit">Cadastrar</button>
+</form>
+
+</body>
+</html>
